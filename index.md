@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "LogicLab"
-  text: "LogicLab"
-  tagline: My great project tagline
+  text: "C++编程学习网站"
+  tagline: 这里有一行字
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: MarkDown示例
       link: /markdown-examples
     - theme: alt
       text: 开始学习
-      link: /api-examples
+      link: /docs/stack.md
 
 features:
   - title: Feature A
