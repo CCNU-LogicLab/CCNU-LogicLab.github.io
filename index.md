@@ -11,8 +11,8 @@ hero:
       text: MarkDown示例
       link: /markdown-examples
     - theme: alt
-      text: 开始学习
-      link: /docs/stack.md
+      text: 电子教材
+      link: /教材/index.md
 
 features:
   - title: Feature A

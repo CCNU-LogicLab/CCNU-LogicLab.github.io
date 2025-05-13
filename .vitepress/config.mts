@@ -5,25 +5,51 @@ export default defineConfig({
   lang: "zh-CN",
   title: "LogicLab",
   description: "LogicLab",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '首页', link: '/' },
       { text: '精选题库', link: '/精选题库/index' },
       { text: '竞赛资讯', link: '/竞赛资讯/index' },
       { text: '学习资源', link: '/学习资源/index' },
-      { text: '课后习题', link: '/课后习题/index' }
+      {
+        text: '课后习题', link: '/课后习题/index',
+        // items: [
+        //   { text: "第一章", link: '/课后习题/第一章/index', },
+        //   { text: "第二章", link: '/课后习题/第二章/index', },
+        //   { text: "第三章", link: '/课后习题/第三章/index', },
+        //   { text: "第四章", link: '/课后习题/第四章/index', },
+        // ]
+      },
+      { text: '电子教材', link: '/教材/index' },
     ],
 
     sidebar: {
       '学习资源': [
+
         {
           text: '学习资源',
-          link: '/学习资源/index',
+          link: '/学习资源/教材/index',
           items: [{
+            text: "教材",
+            link: "/学习资源/教材/index",
+            items: [
+              { text: "第一章", link: '/课后习题/第一章/index', },
+              { text: "第二章", link: '/课后习题/第二章/index', },
+              { text: "第三章", link: '/课后习题/第三章/index', },
+              { text: "第四章", link: '/课后习题/第四章/index', },
+            ]
+          }, {
             text: "数据结构-队列[知识点讲解]",
             link: "/学习资源/数据结构-队列[知识点讲解]"
-          }]
+          },
+
+          ]
         }
       ],
       '课后习题': [{
@@ -62,8 +88,8 @@ export default defineConfig({
       }]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })
