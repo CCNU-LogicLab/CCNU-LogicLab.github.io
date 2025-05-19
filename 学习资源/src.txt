@@ -1,0 +1,12 @@
+【第四章 树和二叉树】https://www.bilibili.com/video/BV1H24y1i7bB?vd_source=0c7ee662c4028e0393ea288a76efc84b
+视频封面：p4
+ 
+
+【【有挂！！】二叉树遍历秒解，前序遍历、中序遍历、后序遍历】https://www.bilibili.com/video/BV1hw4m1q7DF?vd_source=0c7ee662c4028e0393ea288a76efc84b
+视频封面：p5
+ 
+
+【字典树（前缀树、Trie树）】https://www.bilibili.com/video/BV1ZtcBewEbJ?vd_source=34ffb68e04d592968aa3b3eae102dfb3
+视频封面：p6
+ 
+
