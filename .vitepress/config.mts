@@ -20,7 +20,8 @@ export default defineConfig({
       {
         text: '课后习题', items: [
           { text: '第一章', link: '/课后习题/第一章/index' },
-          { text: '第三章', link: '/课后习题/第三章/index' }
+          { text: '第三章', link: '/课后习题/第三章/index' },
+          { text: '第四章', link: '/课后习题/第四章-选择题练习' }
         ]
       },
       { text: '电子教材', link: '/学习资源/教材/index' },
@@ -47,6 +48,12 @@ export default defineConfig({
             { text: '3.2节后习题', link: '/课后习题/第三章/3.2节后习题' },
             { text: '3.3节后习题', link: '/课后习题/第三章/3.3节后习题' }
           ]
+        },
+        {
+          text: '第四章',
+          items: [
+            { text: '选择题练习', link: '/课后习题/第四章-选择题练习' }
+          ]
         }
       ],
       '学习资源': [
@@ -65,7 +72,7 @@ export default defineConfig({
               ]
             },
             {
-              text: "第一章内容",
+              text: "第一章",
               collapsed: false,
               items: [
                 { text: "数据结构-队列[知识点讲解]", link: "/学习资源/第一章/数据结构-队列[知识点讲解]" },
@@ -74,7 +81,7 @@ export default defineConfig({
               ]
             },
             {
-              text: "第二章内容",
+              text: "第二章",
               collapsed: false,
               items: [
                 { text: "第四章 树和二叉树", link: "/学习资源/第二章/第四章 树和二叉树" },
@@ -83,7 +90,7 @@ export default defineConfig({
               ]
             },
             {
-              text: "第三章内容",
+              text: "第三章",
               collapsed: false,
               items: [
                 { text: "【从堆的定义到优先队列、堆排序】 10分钟看懂必考的数据结构——堆", link: "/学习资源/第三章/【从堆的定义到优先队列、堆排序】 10分钟看懂必考的数据结构——堆" },
@@ -92,7 +99,7 @@ export default defineConfig({
               ]
             },
             {
-              text: "第四章内容",
+              text: "第四章",
               collapsed: false,
               items: [
                 { text: "【算法】最短路径查找—Dijkstra算法", link: "/学习资源/第四章/【算法】最短路径查找—Dijkstra算法" },

@@ -1,0 +1,69 @@
+# 组件指南 - CCNU-LogicLab
+
+## 可用组件
+
+1. QuizQuestion.vue - 选择题组件
+2. JudgementQuestion.vue - 判断题组件
+3. FillBlankQuestion.vue - 填空题组件
+
+## 在Markdown文件中使用组件
+
+需要首先在Markdown文件中引入组件：
+<script setup>
+import QuizQuestion from '../components/QuizQuestion.vue'
+</script>
+
+
+## 选择题组件
+
+```vue
+<QuizQuestion
+  question="题目文本"
+  :options="[
+    { label: 'A', text: '选项A' },
+    { label: 'B', text: '选项B' }
+  ]"
+  :correctIndex="0"
+  explanation="解析说明"
+/>
+```
+
+## 判断题组件
+
+```vue
+<JudgementQuestion
+  question="题目文本"
+  :correctAnswer="true"
+  explanation="解析说明"
+/>
+```
+
+## 填空题组件
+
+### 单一答案
+```vue
+<FillBlankQuestion
+  question="题目文本"
+  correctAnswer="答案"
+  explanation="解析说明"
+/>
+```
+
+### 多个可接受答案
+```vue
+<FillBlankQuestion
+  question="题目文本"
+  :correctAnswer="['答案1', '答案2']"
+  explanation="解析说明"
+/>
+```
+
+### 区分大小写
+```vue
+<FillBlankQuestion
+  question="题目文本"
+  correctAnswer="答案"
+  :caseSensitive="true"
+  explanation="解析说明"
+/>
+```
