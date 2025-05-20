@@ -1,0 +1,18 @@
+# 项目组织规范
+
+## 文件位置
+- 所有课后习题文件应放置在 `/workspaces/CCNU-LogicLab.github.io/课后习题/` 目录下
+- 按章节组织，如第一章的习题放在 `/workspaces/CCNU-LogicLab.github.io/课后习题/第一章/` 目录中
+- 每章可根据需要创建 `assets` 文件夹存放图片等资源文件
+
+## 文件命名
+- 文件名应当为题目名
+- 文件格式为 Markdown，扩展名为 `.md`
+- 命名示例：`循环队列操作.md`、`用双栈模拟队列.md`
+
+## 图片资源
+- 题目相关图片应放置在对应章节的 `assets` 文件夹中
+- 图片命名建议为 `p1.png`、`p2.png` 等名称
+- 在Markdown中引用图片时使用相对路径，如 `![图片描述](assets/p1.png)`
+
+完成后需要修改.vitepress/config.mts
