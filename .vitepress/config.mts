@@ -1,10 +1,25 @@
 import { defineConfig } from 'vitepress'
+import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
   title: "LogicLab",
   description: "LogicLab",
+  markdown: {
+    config(md) {
+      md.use(MermaidMarkdown);
+    },
+  },
+  vite: {
+    plugins: [MermaidPlugin()],
+    optimizeDeps: {
+      include: ['mermaid'],
+    },
+    ssr: {
+      noExternal: ['mermaid'],
+    },
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -25,7 +40,7 @@ export default defineConfig({
           { text: '第四章', link: '/课后习题/第四章/index' }
         ]
       },
-      { text: '电子教材', link: '/学习资源/教材/index' },
+      { text: '电子教材', link: '/教材/index' },
     ],
 
     sidebar: {
@@ -76,12 +91,12 @@ export default defineConfig({
           items: [
             {
               text: "教材",
-              link: "/学习资源/教材/index",
+              link: "/教材/index",
               items: [
-                { text: "第一章", link: '/课后习题/第一章/index' },
-                { text: "第二章", link: '/课后习题/第二章/index' },
-                { text: "第三章", link: '/课后习题/第三章/index' },
-                { text: "第四章", link: '/课后习题/第四章/index' }
+                { text: "第一章", link: '/教材/1.md' },
+                { text: "第二章", link: '/教材/2.md' },
+                { text: "第三章", link: '/教材/3.md' },
+                { text: "第四章", link: '/教材/4.md' }
               ]
             },
             {
