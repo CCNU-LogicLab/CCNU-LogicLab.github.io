@@ -15,4 +15,14 @@
 - 图片命名建议为 `p1.png`、`p2.png` 等名称
 - 在Markdown中引用图片时使用相对路径，如 `![图片描述](assets/p1.png)`
 
+## 题目配置
+
+- 应当根据/workspaces/CCNU-LogicLab.github.io/components/llms.txt使用组件配置选择题、判断题、填空题、简答题
+- 代码块或简答题应当使用如下语法
+```markdown
+::: details <模块描述，如答案、代码等>
+<code>
+:::
+```
+
 完成后需要修改.vitepress/config.mts

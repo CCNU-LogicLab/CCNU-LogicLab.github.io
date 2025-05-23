@@ -20,8 +20,9 @@ export default defineConfig({
       {
         text: '课后习题', items: [
           { text: '第一章', link: '/课后习题/第一章/index' },
+          { text: '第二章', link: '/课后习题/第二章/index' },
           { text: '第三章', link: '/课后习题/第三章/index' },
-          { text: '第四章', link: '/课后习题/第四章-选择题练习' }
+          { text: '第四章', link: '/课后习题/第四章/index' }
         ]
       },
       { text: '电子教材', link: '/学习资源/教材/index' },
@@ -41,6 +42,15 @@ export default defineConfig({
           ]
         },
         {
+          text: '第二章',
+          link: '/课后习题/第二章/index',
+          items: [
+            { text: '2.1节后习题', link: '/课后习题/第二章/2.1节后习题' },
+            { text: '2.2节后习题', link: '/课后习题/第二章/2.2节后习题' },
+            { text: '2.3节后习题', link: '/课后习题/第二章/2.3节后习题' }
+          ]
+        },
+        {
           text: '第三章',
           link: '/课后习题/第三章/index',
           items: [
@@ -51,8 +61,11 @@ export default defineConfig({
         },
         {
           text: '第四章',
+          link: '/课后习题/第四章/index',
           items: [
-            { text: '选择题练习', link: '/课后习题/第四章-选择题练习' }
+            { text: '4.1节后习题', link: '/课后习题/第四章/4.1节后习题' },
+            { text: '4.2节后习题', link: '/课后习题/第四章/4.2节后习题' },
+            { text: '4.3节后习题', link: '/课后习题/第四章/4.3节后习题' }
           ]
         }
       ],
