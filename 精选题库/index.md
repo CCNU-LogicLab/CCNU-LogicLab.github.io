@@ -1,16 +1,15 @@
 # 精选题库
 
-还没做
 
-<script setup>
-import QuizQuestion from '../components/QuizQuestion.vue'
-</script>
-<QuizQuestion
-  question="题目文本"
-  :options="[
-    { label: 'A', text: '选项A' },
-    { label: 'B', text: '选项B' }
-  ]"
-  :correctIndex="0"
-  explanation="解析说明"
-/>
+### CSP-J 入门级题目
+
+CSP-J（入门级）认证是面向中学生的基础编程能力认证，主要考查基础算法和编程思维。
+
+#### 历年真题
+- [2020年CSP-J第二轮真题解析](./2020CSP-J第二轮.md) - 包含四道题目的详细分析与解答
+- [2021年CSP-J第一轮试题](./2021CSP-J第一轮.pdf) - 选择填空题，基础知识考查
+- [2021年CSP-J第二轮试题](./2021CSP-J第二轮.pdf) - 编程题，算法实现能力考查
+- [2021年CSP-J第一轮参考答案](./CSP2021-j第一轮答案.pdf) - 详细答案解析
+
+
+
