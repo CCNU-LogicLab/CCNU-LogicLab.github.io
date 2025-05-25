@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: 在线练习
       link: /课后习题/
+  image:
+    src: /logo.png
+    alt: "CCNU LogicLab"
 
 features:
   - title: 📚 系统化学习资源
