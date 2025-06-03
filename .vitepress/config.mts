@@ -42,6 +42,7 @@ export default defineConfig({
         ]
       },
       { text: '电子教材', link: '/教材/index' },
+      { text: '学习助手', link: '/agent' },
     ],
 
     sidebar: {
@@ -166,8 +167,8 @@ export default defineConfig({
 
     },
 
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/CCNU-LogicLab/CCNU-LogicLab.github.io' }
+    ]
   }
 })
